@@ -29,7 +29,7 @@ main{
 section#login{
     position: absolute;
     background-color: white;
-    width: 300px;
+    width: 250px;
     height: 515px;
     border-radius: 20px;
     top: 50%;
@@ -69,12 +69,37 @@ div.campo{
     display: block;
     height: 40px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid #5f2c82;
 }
 
 form label{
     display: none;
+}
+
+div.campo > span{
+    color: white;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #6bede9;
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 1px;
+    width: calc(100% - 45px);
+    transform: translateY(-17px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+    outline: none;
 }
 
 form  input[type = submit]{
